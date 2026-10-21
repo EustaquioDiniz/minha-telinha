@@ -1,6 +1,6 @@
 /* Minha Telinha: guarda o app no aparelho para abrir sem internet.
    Ao publicar uma versão nova do app, troque o número abaixo (v1 -> v2). */
-const VERSION = 'telinha-v1';
+const VERSION = 'telinha-v2';
 const FONTS = 'telinha-fontes';
 const SHELL = [
   './', './index.html', './manifest.webmanifest',

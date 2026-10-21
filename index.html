@@ -30,7 +30,7 @@
 *{box-sizing:border-box}
 html{-webkit-tap-highlight-color:transparent;background:var(--bg)}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);margin:0;min-height:100%;
-  padding-block:0 132px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  padding-block:0 170px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .amb{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(60% 42% at 0% 6%,rgba(24,128,140,.40),transparent 70%),
              radial-gradient(55% 42% at 100% 96%,rgba(98,64,190,.32),transparent 70%),
@@ -150,13 +150,13 @@ select option{background:var(--panel);color:var(--ink)}
 
 /* nav */
 nav{position:fixed;left:0;right:0;bottom:0;z-index:15;display:flex;justify-content:center;pointer-events:none;
-  padding:0 max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+  padding:0 max(16px,env(safe-area-inset-right,0px)) calc(34px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 nav .bar{pointer-events:auto;display:flex;align-items:center;gap:4px;padding:6px;border-radius:99px;background:rgba(14,16,24,.72);
   backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid var(--line);box-shadow:var(--shadow)}
 nav button{display:flex;align-items:center;gap:6px;padding:11px 18px;border-radius:99px;font-weight:700;font-size:13.5px;color:var(--ink-3)}
 nav button .ic{width:18px;height:18px;color:currentColor;stroke-width:2}
 nav button[aria-current="page"]{background:rgba(255,255,255,.08);color:var(--ink)}
-nav .add{width:50px;height:50px;padding:0;justify-content:center;color:#fff;background:var(--btn);box-shadow:0 0 22px rgba(120,100,240,.45)}
+nav .add{width:60px;height:60px;padding:0;justify-content:center;color:#fff;background:var(--btn);transform:translateY(-14px);box-shadow:0 0 0 5px var(--bg),0 0 26px rgba(120,100,240,.5)}
 nav .add .ic{width:22px;height:22px;stroke-width:2.4}
 
 /* folha de edição */
@@ -206,7 +206,7 @@ textarea{min-height:80px}
 .tv-foot{width:52%;height:4px;margin:4px auto 0;border-radius:99px;background:linear-gradient(90deg,transparent,rgba(143,116,245,.6),transparent);box-shadow:0 0 16px rgba(143,116,245,.5)}
 .cover .btn{margin-top:30px;padding:16px 48px;font-size:16px;border-radius:99px}
 
-.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(92px + env(safe-area-inset-bottom,0px));background:rgba(20,22,32,.94);border:1px solid var(--line);color:var(--ink);
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(128px + env(safe-area-inset-bottom,0px));background:rgba(20,22,32,.94);border:1px solid var(--line);color:var(--ink);
   padding:11px 18px;border-radius:99px;font-weight:700;font-size:13px;z-index:30;max-width:90%;box-shadow:var(--shadow)}
 
 @media (prefers-reduced-motion:no-preference){
